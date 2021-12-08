@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# 查找最小和最大的降水量precipitationCal
 # @Time    : 2019/2/28 17:28
 # @Author  : zengsk in HoHai
 # @File    : Calc_AVG_IMERG.py
