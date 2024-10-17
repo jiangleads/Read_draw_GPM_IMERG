@@ -3,10 +3,10 @@
 ;   Only works for ARW domains
 ;   Reads namelist file directly
 ;   ------------------------------------------------------------
-;   ncl°æ±¾Ó¦µÍÓÚ6.6
-;   ÊäÈëÊı¾İ"data.cdf" Î»ÓÚ 174ĞĞ¸½½ü
-;   µØĞÎÉ«±êÉèÖÃ£¬¼û236-240ĞĞ¸½½ü
-;   µØĞÎ¸ß¶ÈµÄµÈÖµÏß¼ä¸ôÉèÖÃ£¬¼û 246ĞĞ-253ĞĞ¸½½ü
+;   nclç‰ˆæœ¬åº”ä½äº6.6
+;   è¾“å…¥æ•°æ®"data.cdf" ä½äº 174è¡Œé™„è¿‘
+;   åœ°å½¢è‰²æ ‡è®¾ç½®ï¼Œè§236-240è¡Œé™„è¿‘
+;   åœ°å½¢é«˜åº¦çš„ç­‰å€¼çº¿é—´éš”è®¾ç½®ï¼Œè§ 246è¡Œ-253è¡Œé™„è¿‘
 ;   ------------------------------------------------------------
 
 load "$NCARG_ROOT/lib/ncarg/nclscripts/csm/gsn_code.ncl"
@@ -94,14 +94,14 @@ type = "png"
   opts@gsnDraw       = get_res_value_keep(opts,"gsnDraw",     True)
   opts@gsnFrame      = get_res_value_keep(opts,"gsnFrame",    False)
  
-  opts@cnFillDrawOrder 			  	 = "PostDraw"				; ÉèÖÃÌîÉ«Í¼»æÍ¼Ë³Ğò
+  opts@cnFillDrawOrder 			  	 = "PostDraw"				; è®¾ç½®å¡«è‰²å›¾ç»˜å›¾é¡ºåº
   opts@mpGridAndLimbOn        = True               ; turn on grid lines
-  opts@mpGridAndLimbDrawOrder 		 = "PostDraw"	; ÉèÖÃÍø¸ñÏß»æÍ¼Ë³Ğò
+  opts@mpGridAndLimbDrawOrder 		 = "PostDraw"	; è®¾ç½®ç½‘æ ¼çº¿ç»˜å›¾é¡ºåº
   opts@cnGridBoundPerimOn         = True
-  opts@mpLabelDrawOrder 					 = "PostDraw"	; ÉèÖÃµØÍ¼±êÇ©»æÍ¼Ë³Ğò
-  opts@mpOutlineDrawOrder  		= "preDraw"		; ÉèÖÃµØÍ¼ÂÖÀª»æÍ¼Ë³Ğò
-  opts@mpOceanFillColor 			= "white" 	; º£ÑóÌî³äÑÕÉ«
-  opts@mpInlandWaterFillColor = "white" 		  ; ÄÚÂ½Ë®ÃæÌî³äÑÕÉ«
+  opts@mpLabelDrawOrder 					 = "PostDraw"	; è®¾ç½®åœ°å›¾æ ‡ç­¾ç»˜å›¾é¡ºåº
+  opts@mpOutlineDrawOrder  		= "preDraw"		; è®¾ç½®åœ°å›¾è½®å»“ç»˜å›¾é¡ºåº
+  opts@mpOceanFillColor 			= "white" 	; æµ·æ´‹å¡«å……é¢œè‰²
+  opts@mpInlandWaterFillColor = "white" 		  ; å†…é™†æ°´é¢å¡«å……é¢œè‰²
  
   test = systemfunc("grep lambert " +filename ) 
   if ( .not. ismissing(test) )
@@ -294,11 +294,11 @@ type = "png"
 
   res_tot@pmLabelBarHeightF    = 0.085        ; Make labelbar less thick
   res_tot@lbLabelFontHeightF   = 0.016
-  res_tot@pmLabelBarWidthF         = 0.45 ;ÖµÔ½Ğ¡£¬Ô½¶Ì
+  res_tot@pmLabelBarWidthF         = 0.45 ;å€¼è¶Šå°ï¼Œè¶ŠçŸ­
   res_tot@pmLabelBarOrthogonalPosF = 0
   res_tot@lbLabelFont = "times-roman"
 
-  res_tot@tiMainOffsetYF = 0.0 ;Ô½´óÔ½ÍùÉÏ
+  res_tot@tiMainOffsetYF = 0.0 ;è¶Šå¤§è¶Šå¾€ä¸Š
   res_tot@tiMainFont = "times-roman"
   res_tot@tiMainFontHeightF = 0.024
   res_tot@tiMainFontThicknessF = 0.19
