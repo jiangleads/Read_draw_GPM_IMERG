@@ -99,7 +99,7 @@ type = "png"
   opts@mpGridAndLimbDrawOrder 		 = "PostDraw"	; 设置网格线绘图顺序
   opts@cnGridBoundPerimOn         = True
   opts@mpLabelDrawOrder 					 = "PostDraw"	; 设置地图标签绘图顺序
-  opts@mpOutlineDrawOrder  		= "preDraw"		; 设置地图轮廓绘图顺序
+  opts@mpOutlineDrawOrder  		= "PostDraw"		; 设置地图轮廓绘图顺序
   opts@mpOceanFillColor 			= "white" 	; 海洋填充颜色
   opts@mpInlandWaterFillColor = "white" 		  ; 内陆水面填充颜色
  
